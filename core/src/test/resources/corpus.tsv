@@ -1,0 +1,74 @@
+# The 15 sentences from the spec. Spoken on Sat 14 Nov 2026 at 10:30 unless the first field says otherwise.
+2026-11-14T10:30	add my visit to Paithan this weekend	EVENT; Visit to Paithan; 2026-11-14..2026-11-15; allday; rep=-; rem=-; flags=DATE,REMINDER; -
+2026-11-14T10:30	dinner with friends on 20th Nov	EVENT; Dinner with friends; 2026-11-20; 20:00; rep=-; rem=2026-11-20T19:45; flags=TIME; -
+2026-11-14T10:30	Visiting Buldhana on 11th, return 12th	EVENT; Visiting Buldhana; 2026-12-11..2026-12-12; allday; rep=-; rem=2026-12-11T10:00; flags=DATE; -
+2026-11-14T10:30	Movie this Saturday 2 PM	EVENT; Movie; 2026-11-14; 14:00; rep=-; rem=2026-11-14T13:45; flags=DATE; -
+2026-11-14T10:30	Terumo meeting every Friday 9 PM for cadence check	EVENT; Terumo meeting; 2026-11-20; 21:00; rep=weekly:FRI; rem=2026-11-20T20:45; flags=-; note=cadence check
+2026-11-14T10:30	kal subah 7 baje gym	EVENT; Gym; 2026-11-15; 07:00; rep=-; rem=2026-11-15T06:45; flags=-; -
+2026-11-14T10:30	parso shaam ko society meeting hai	EVENT; Society meeting; 2026-11-16; 18:00; rep=-; rem=2026-11-16T17:45; flags=TIME; -
+2026-11-14T10:30	remind me to pay credit card bill on 5th	TODO; Pay credit card bill; 2026-12-05; allday; rep=-; rem=2026-12-05T10:00; flags=DATE; suggest=Repeat monthly?
+2026-11-14T10:30	next Friday team lunch at 1	EVENT; Team lunch; 2026-11-20; 13:00; rep=-; rem=2026-11-20T12:45; flags=DATE; -
+2026-11-14T10:30	call mom at 7	TODO; Call mom; 2026-11-14; 19:00; rep=-; rem=2026-11-14T19:00; flags=TIME; -
+2026-11-14T00:40	move at 2 tomorrow	EVENT; Move; 2026-11-14; 14:00; rep=-; rem=2026-11-14T13:45; flags=DATE; -
+2026-11-14T10:30	Varkala trip 12 to 20 December tentative	EVENT; Varkala trip; 2026-12-12..2026-12-20; allday; rep=-; rem=2026-12-12T10:00; flags=-; tentative
+2026-11-14T10:30	salary credit last working day of every month	NOTE; Salary credit; 2026-11-30; allday; rep=monthly:last-weekday; rem=-; flags=REPEAT; -
+2026-11-14T10:30	Pune trip for 3 days from 25th	EVENT; Pune trip; 2026-11-25..2026-11-27; allday; rep=-; rem=2026-11-25T10:00; flags=-; -
+2026-11-14T10:30	car service on 18th at 11 and haircut on 19th evening	EVENT; Car service; 2026-11-18; 11:00; rep=-; rem=2026-11-18T10:45; flags=TIME; - || EVENT; Haircut; 2026-11-19; 18:00; rep=-; rem=2026-11-19T17:45; flags=TIME; -
+# Dates
+2026-11-14T10:30	flight to Delhi on 20/11	EVENT; Flight to Delhi; 2026-11-20; allday; rep=-; rem=2026-11-20T10:00; flags=-; -
+2026-11-14T10:30	flight to Delhi on 3/1	EVENT; Flight to Delhi; 2027-01-03; allday; rep=-; rem=2027-01-03T10:00; flags=DATE; -
+2026-11-14T10:30	wedding in Nagpur on 5 Feb 2027	EVENT; Wedding in Nagpur; 2027-02-05; allday; rep=-; rem=2027-02-05T10:00; flags=-; -
+2026-11-14T10:30	dentist appointment 2nd December at 5:30 pm	EVENT; Dentist appointment; 2026-12-02; 17:30; rep=-; rem=2026-12-02T17:15; flags=-; -
+2026-11-14T10:30	meeting on Monday	EVENT; Meeting; 2026-11-16; allday; rep=-; rem=2026-11-16T10:00; flags=-; -
+2026-11-14T10:30	meeting today at 4	EVENT; Meeting; 2026-11-14; 16:00; rep=-; rem=2026-11-14T15:45; flags=-; -
+2026-11-14T10:30	day after tomorrow lunch with college friends	EVENT; Lunch with college friends; 2026-11-16; 13:00; rep=-; rem=2026-11-16T12:45; flags=TIME; -
+2026-11-14T10:30	team outing in 3 days	EVENT; Team outing; 2026-11-17; allday; rep=-; rem=2026-11-17T10:00; flags=-; -
+2026-11-14T10:30	submit timesheet month end	TODO; Submit timesheet; 2026-11-30; allday; rep=-; rem=2026-11-30T10:00; flags=-; -
+2026-11-14T10:30	project review next week	NOTE; Project review; 2026-11-21; allday; rep=-; rem=-; flags=DATE; -
+2026-11-14T10:30	Goa trip from Friday to Sunday	EVENT; Goa trip; 2026-11-20..2026-11-22; allday; rep=-; rem=2026-11-20T10:00; flags=-; -
+2026-11-14T10:30	Kamshet course 17-20 December	EVENT; Kamshet course; 2026-12-17..2026-12-20; allday; rep=-; rem=2026-12-17T10:00; flags=-; -
+2026-11-14T10:30	Mumbai trip 28 Nov to 2 Dec	EVENT; Mumbai trip; 2026-11-28..2026-12-02; allday; rep=-; rem=2026-11-28T10:00; flags=-; -
+2026-11-14T10:30	movie with friends next weekend	EVENT; Movie with friends; 2026-11-21..2026-11-22; allday; rep=-; rem=2026-11-21T10:00; flags=-; -
+2026-11-14T10:30	doctor visit on 14th at 6 pm	EVENT; Doctor visit; 2026-11-14; 18:00; rep=-; rem=2026-11-14T17:45; flags=-; -
+2026-11-14T10:30	birthday party on Nov 30	EVENT; Birthday party; 2026-11-30; allday; rep=-; rem=2026-11-30T10:00; flags=-; -
+2026-11-14T10:30	insurance renewal on 10 tarikh	NOTE; Insurance renewal; 2026-12-10; allday; rep=-; rem=-; flags=DATE; -
+# Times
+2026-11-14T10:30	client call Monday 4:30, remind me 15 minutes before	EVENT; Client call; 2026-11-16; 16:30; rep=-; rem=2026-11-16T16:15; flags=-; -
+2026-11-14T10:30	standup tomorrow at 9 30 am	EVENT; Standup; 2026-11-15; 09:30; rep=-; rem=2026-11-15T09:15; flags=-; -
+2026-11-14T10:30	gym at 6	EVENT; Gym; 2026-11-14; 18:00; rep=-; rem=2026-11-14T17:45; flags=-; -
+2026-11-14T10:30	gym at 6 am	EVENT; Gym; 2026-11-15; 06:00; rep=-; rem=2026-11-15T05:45; flags=DATE; -
+2026-11-14T10:30	call the bank at 9	TODO; Call the bank; 2026-11-14; 21:00; rep=-; rem=2026-11-14T21:00; flags=TIME; -
+2026-11-14T10:30	shaam ko saade paanch baje chai with neighbours	EVENT; Chai with neighbours; 2026-11-14; 17:30; rep=-; rem=2026-11-14T17:15; flags=-; -
+2026-11-14T10:30	kal dhai baje bank jaana hai	EVENT; Bank jaana; 2026-11-15; 14:30; rep=-; rem=2026-11-15T14:15; flags=-; -
+2026-11-14T10:30	meeting at noon tomorrow	EVENT; Meeting; 2026-11-15; 12:00; rep=-; rem=2026-11-15T11:45; flags=-; -
+2026-11-14T10:30	dinner at 8 on Sunday	EVENT; Dinner; 2026-11-15; 20:00; rep=-; rem=2026-11-15T19:45; flags=-; -
+2026-11-14T10:30	breakfast with team on Tuesday	EVENT; Breakfast with team; 2026-11-17; 09:00; rep=-; rem=2026-11-17T08:45; flags=TIME; -
+2026-11-14T10:30	tonight movie	EVENT; Movie; 2026-11-14; 21:00; rep=-; rem=2026-11-14T20:45; flags=TIME; -
+2026-11-14T10:30	raat 11 baje flight on 22nd Nov	EVENT; Flight; 2026-11-22; 23:00; rep=-; rem=2026-11-22T22:45; flags=-; -
+2026-11-14T10:30	lunch tomorrow	EVENT; Lunch; 2026-11-15; 13:00; rep=-; rem=2026-11-15T12:45; flags=TIME; -
+2026-11-14T10:30	call electrician at 9:15 p.m.	TODO; Call electrician; 2026-11-14; 21:15; rep=-; rem=2026-11-14T21:15; flags=-; -
+2026-11-14T21:00	call mom at 7	TODO; Call mom; 2026-11-15; 07:00; rep=-; rem=2026-11-15T07:00; flags=TIME; -
+2026-11-14T21:00	gym at 6 pm	EVENT; Gym; 2026-11-15; 18:00; rep=-; rem=2026-11-15T17:45; flags=DATE; -
+2026-11-14T01:15	kal subah 7 baje gym	EVENT; Gym; 2026-11-14; 07:00; rep=-; rem=2026-11-14T06:45; flags=DATE; -
+2026-11-14T01:15	parso doctor appointment at 5	EVENT; Doctor appointment; 2026-11-15; 17:00; rep=-; rem=2026-11-15T16:45; flags=DATE; -
+2026-11-14T01:15	today at 3 pm client demo	EVENT; Client demo; 2026-11-14; 15:00; rep=-; rem=2026-11-14T14:45; flags=-; -
+# Repeats, kinds, reminders
+2026-11-14T10:30	gym daily at 7 am	EVENT; Gym; 2026-11-15; 07:00; rep=daily; rem=2026-11-15T06:45; flags=-; -
+2026-11-14T10:30	pay rent every month on the 1st	TODO; Pay rent; 2026-12-01; allday; rep=monthly:1; rem=2026-12-01T10:00; flags=-; -
+2026-11-14T10:30	SIP on 5th of every month	TODO; SIP; 2026-12-05; allday; rep=monthly:5; rem=2026-12-05T10:00; flags=-; -
+2026-11-14T10:30	team sync weekly on Monday 3 pm	EVENT; Team sync; 2026-11-16; 15:00; rep=weekly:MON; rem=2026-11-16T14:45; flags=-; -
+2026-11-14T10:30	mom birthday on 3 March every year	EVENT; Mom birthday; 2027-03-03; allday; rep=yearly; rem=2027-03-03T10:00; flags=DATE; -
+2026-11-14T10:30	weekly review every Friday	NOTE; Weekly review; 2026-11-20; allday; rep=weekly:FRI; rem=-; flags=-; -
+2026-11-14T10:30	housing society meeting every 2nd Saturday at 11 am	EVENT; Housing society meeting; 2026-11-14; 11:00; rep=weekly:SAT; rem=2026-11-14T10:45; flags=REPEAT; -
+2026-11-14T10:30	note that Rahul owes me 500	NOTE; Rahul owes me 500; 2026-11-14; allday; rep=-; rem=-; flags=DATE; -
+2026-11-14T10:30	buy milk	TODO; Buy milk; 2026-11-14; allday; rep=-; rem=-; flags=DATE,REMINDER; -
+2026-11-14T10:30	remind me to call the plumber tomorrow at 11 am	TODO; Call the plumber; 2026-11-15; 11:00; rep=-; rem=2026-11-15T11:00; flags=-; -
+2026-11-14T10:30	reminder to renew passport on 15 January	TODO; Renew passport; 2027-01-15; allday; rep=-; rem=2027-01-15T10:00; flags=DATE; -
+2026-11-14T10:30	set a reminder for electricity bill on 25th	TODO; Electricity bill; 2026-11-25; allday; rep=-; rem=2026-11-25T10:00; flags=-; suggest=Repeat monthly?
+2026-11-14T10:30	team dinner on 21st Nov at 8 pm remind me an hour before	EVENT; Team dinner; 2026-11-21; 20:00; rep=-; rem=2026-11-21T19:00; flags=-; -
+2026-11-14T10:30	Kerala trip 12 to 20 December remind me 2 days before	EVENT; Kerala trip; 2026-12-12..2026-12-20; allday; rep=-; rem=2026-12-10T10:00; flags=-; -
+2026-11-14T10:30	book train tickets tomorrow	TODO; Book train tickets; 2026-11-15; allday; rep=-; rem=2026-11-15T10:00; flags=-; -
+2026-11-14T10:30	i have a meeting tomorrow	EVENT; Meeting; 2026-11-15; allday; rep=-; rem=2026-11-15T10:00; flags=-; -
+2026-11-14T10:30	Varkala trip maybe 12 to 20 Dec	EVENT; Varkala trip; 2026-12-12..2026-12-20; allday; rep=-; rem=2026-12-12T10:00; flags=-; tentative
+2026-11-14T10:30	lunch at 1 and movie at 4	EVENT; Lunch; 2026-11-14; 13:00; rep=-; rem=2026-11-14T12:45; flags=-; - || EVENT; Movie; 2026-11-14; 16:00; rep=-; rem=2026-11-14T15:45; flags=-; -
+2026-11-14T10:30	dinner with mom and dad on 20th	EVENT; Dinner with mom and dad; 2026-11-20; 20:00; rep=-; rem=2026-11-20T19:45; flags=TIME; -
