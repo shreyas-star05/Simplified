@@ -2,15 +2,15 @@
 
 package com.dusk.lab.ui
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.PrimaryTabRow
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
-import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableIntState
@@ -21,13 +21,14 @@ private val TABS = listOf("Speech", "Reminders", "Plan", "Results")
 
 @Composable
 fun LabApp(tab: MutableIntState) {
+    // Surface sets the default text colour for the theme, so titles stay readable in dark mode.
+    Surface(Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
     Column(
         Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
             .safeDrawingPadding(),
     ) {
-        TabRow(
+        PrimaryTabRow(
             selectedTabIndex = tab.intValue,
             containerColor = MaterialTheme.colorScheme.background,
             contentColor = MaterialTheme.colorScheme.primary,
@@ -49,5 +50,6 @@ fun LabApp(tab: MutableIntState) {
                 else -> ResultsTab()
             }
         }
+    }
     }
 }

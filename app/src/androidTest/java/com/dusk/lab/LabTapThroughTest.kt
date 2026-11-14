@@ -109,7 +109,9 @@ class LabTapThroughTest {
             val lateMs = a.firedAt!! - a.scheduledAt
             assertTrue("${a.api} reminder fired ${lateMs}ms from its time", lateMs in -1_000..60_000)
         }
-        Thread.sleep(2500) // let the tab reload its log
+        // The tab reloads its log every 2 seconds on the test clock, so move that clock forward.
+        rule.mainClock.advanceTimeBy(4_000)
+        rule.onNodeWithTag("outcome-2").assertTextContains("fired", substring = true)
         shot("7-reminders-fired")
     }
 

@@ -4,11 +4,13 @@ import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 
 /** A scheduled test reminder is due. */
 class AlarmReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         val id = intent.getIntExtra("id", -1)
+        Log.i("DuskLab", "AlarmReceiver: reminder $id")
         if (id >= 0) ReminderScheduler.fire(context, id)
     }
 }
@@ -42,6 +44,7 @@ class BootReceiver : BroadcastReceiver() {
             Intent.ACTION_MY_PACKAGE_REPLACED -> "app updated"
             else -> return
         }
+        Log.i("DuskLab", "BootReceiver: $reason")
         ReminderScheduler.rescheduleAll(context, reason)
     }
 }
