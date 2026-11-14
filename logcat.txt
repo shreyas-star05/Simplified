@@ -1,0 +1,30 @@
+11-14 21:03:27.566   959   959 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+11-14 21:05:17.712  5521  5521 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-14 21:05:17.730  5521  5521 I AndroidRuntime: Using default boot image
+11-14 21:05:17.730  5521  5521 I AndroidRuntime: Leaving lock profiling enabled
+11-14 21:05:17.937  5521  5521 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-14 21:05:19.083  5543  5573 I TestRunner: started: a_journalScreensBlockScreenshots(com.dusk.app.DuskTest)
+11-14 21:05:26.802  5543  5573 I TestRunner: finished: a_journalScreensBlockScreenshots(com.dusk.app.DuskTest)
+11-14 21:05:26.857  5543  5573 I TestRunner: started: b_speakSaveAndReopen(com.dusk.app.DuskTest)
+11-14 21:05:41.276  5543  5573 I TestRunner: finished: b_speakSaveAndReopen(com.dusk.app.DuskTest)
+11-14 21:05:41.285  5543  5573 I TestRunner: started: c_settingsBackupDialogAndDarkTheme(com.dusk.app.DuskTest)
+11-14 21:05:51.370  5543  5573 I TestRunner: finished: c_settingsBackupDialogAndDarkTheme(com.dusk.app.DuskTest)
+11-14 21:05:51.395  5543  5573 I TestRunner: started: d_restoreDrill(com.dusk.app.DuskTest)
+11-14 21:05:56.256  5543  5573 I System.out: DuskTest: backup of 3 days took 2890 ms on the emulator
+11-14 21:06:02.422  5543  5573 I TestRunner: finished: d_restoreDrill(com.dusk.app.DuskTest)
+11-14 21:06:02.423  5543  5573 I TestRunner: started: e_addingAndRemovingAPinKeepsTheJournalReadable(com.dusk.app.DuskTest)
+11-14 21:06:03.457  6087  6087 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-14 21:06:03.461  6087  6087 I AndroidRuntime: Using default boot image
+11-14 21:06:03.461  6087  6087 I AndroidRuntime: Leaving lock profiling enabled
+11-14 21:06:03.577  6087  6087 D AndroidRuntime: Calling main entry com.android.commands.locksettings.LockSettingsCmd
+11-14 21:06:03.765  6087  6087 D AndroidRuntime: Shutting down VM
+11-14 21:06:06.332  6134  6134 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-14 21:06:06.339  6134  6134 I AndroidRuntime: Using default boot image
+11-14 21:06:06.339  6134  6134 I AndroidRuntime: Leaving lock profiling enabled
+11-14 21:06:06.431  6134  6134 D AndroidRuntime: Calling main entry com.android.commands.locksettings.LockSettingsCmd
+11-14 21:06:06.624  6134  6134 D AndroidRuntime: Shutting down VM
+11-14 21:06:09.610  5543  5573 I TestRunner: finished: e_addingAndRemovingAPinKeepsTheJournalReadable(com.dusk.app.DuskTest)
+11-14 21:06:09.612  5543  5573 I TestRunner: started: f_aDamagedDayIsSetAsideNotDeleted(com.dusk.app.DuskTest)
+11-14 21:06:10.818  5543  5582 W Dusk    : could not open 2026-01-01.day: a file in the journal store cannot be opened
+11-14 21:06:11.621  5543  5573 I TestRunner: finished: f_aDamagedDayIsSetAsideNotDeleted(com.dusk.app.DuskTest)
+11-14 21:06:11.749  5521  5521 I AndroidRuntime: VM exiting with result code 0.
