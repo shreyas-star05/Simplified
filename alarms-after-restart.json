@@ -1,0 +1,1 @@
+{"alarms":[{"id":1,"label":"restart test","api":"idle","scheduledAt":1794690950492,"note":"","reschedules":2,"firedAt":1794690950499},{"id":2,"label":"restart test","api":"clock","scheduledAt":1794691010492,"note":"","reschedules":2,"firedAt":1794691010503}],"events":["Sat 14 Nov 21:08:38  restart, before unlock","Sat 14 Nov 21:08:49  restart, after unlock"]}

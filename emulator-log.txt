@@ -1,0 +1,108 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:processResources NO-SOURCE
+> Task :lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lab:preBuild UP-TO-DATE
+> Task :lab:preDebugBuild UP-TO-DATE
+> Task :lab:processDebugNavigationResources
+> Task :lab:checkDebugAarMetadata
+> Task :lab:generateDebugResValues
+> Task :lab:compileDebugNavigationResources
+> Task :lab:mapDebugSourceSetPaths
+> Task :lab:generateDebugResources
+> Task :lab:packageDebugResources
+> Task :lab:createDebugCompatibleScreenManifests
+> Task :lab:extractDeepLinksDebug
+> Task :lab:parseDebugLocalResources
+> Task :lab:mergeDebugResources
+
+> Task :lab:processDebugMainManifest
+/home/runner/work/Simplified/Simplified/lab/src/main/AndroidManifest.xml:13:5-15:31 Warning:
+	uses-permission#android.permission.INTERNET was tagged at AndroidManifest.xml:13 to remove other declarations but no other declaration present
+/home/runner/work/Simplified/Simplified/lab/src/main/AndroidManifest.xml:16:5-18:31 Warning:
+	uses-permission#android.permission.ACCESS_NETWORK_STATE was tagged at AndroidManifest.xml:16 to remove other declarations but no other declaration present
+
+> Task :lab:processDebugManifest
+> Task :lab:preDebugAndroidTestBuild SKIPPED
+> Task :lab:javaPreCompileDebug
+> Task :lab:checkDebugAndroidTestAarMetadata
+> Task :lab:processDebugManifestForPackage
+> Task :lab:processDebugAndroidTestNavigationResources
+> Task :lab:compileDebugAndroidTestNavigationResources
+> Task :lab:generateDebugAndroidTestResValues
+> Task :lab:mapDebugAndroidTestSourceSetPaths
+> Task :lab:generateDebugAndroidTestResources
+> Task :lab:processDebugResources
+> Task :lab:mergeDebugAndroidTestResources
+> Task :lab:processDebugAndroidTestManifest
+> Task :lab:javaPreCompileDebugAndroidTest
+> Task :lab:mergeDebugShaders
+> Task :lab:compileDebugShaders NO-SOURCE
+> Task :lab:generateDebugAssets UP-TO-DATE
+> Task :lab:mergeDebugAssets
+> Task :lab:compressDebugAssets
+> Task :lab:desugarDebugFileDependencies
+> Task :lab:mergeDebugJniLibFolders
+> Task :lab:validateSigningDebug
+> Task :lab:writeDebugAppMetadata
+> Task :lab:writeDebugSigningConfigVersions
+> Task :lab:mergeDebugAndroidTestShaders
+> Task :lab:compileDebugAndroidTestShaders NO-SOURCE
+> Task :lab:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :lab:checkDebugDuplicateClasses
+> Task :lab:processDebugAndroidTestResources
+> Task :lab:mergeDebugAndroidTestAssets
+> Task :lab:compressDebugAndroidTestAssets
+> Task :lab:desugarDebugAndroidTestFileDependencies
+> Task :lab:checkDebugAndroidTestDuplicateClasses
+> Task :lab:mergeDebugAndroidTestJniLibFolders
+> Task :lab:validateSigningDebugAndroidTest
+> Task :lab:writeDebugAndroidTestSigningConfigVersions
+> Task :lab:mergeExtDexDebugAndroidTest
+> Task :lab:mergeExtDexDebug
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar
+> Task :lab:mergeDebugNativeLibs
+> Task :lab:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :lab:stripDebugAndroidTestDebugSymbols NO-SOURCE
+
+> Task :lab:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :lab:mergeLibDexDebugAndroidTest
+> Task :lab:mergeLibDexDebug
+> Task :lab:compileDebugKotlin
+> Task :lab:compileDebugJavaWithJavac NO-SOURCE
+> Task :lab:bundleDebugClassesToCompileJar
+> Task :lab:dexBuilderDebug
+> Task :lab:mergeDebugGlobalSynthetics
+> Task :lab:processDebugJavaRes
+> Task :lab:mergeProjectDexDebug
+> Task :lab:compileDebugAndroidTestKotlin
+> Task :lab:mergeDebugJavaResource
+> Task :lab:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :lab:dexBuilderDebugAndroidTest
+> Task :lab:mergeDebugAndroidTestGlobalSynthetics
+> Task :lab:processDebugAndroidTestJavaRes
+> Task :lab:mergeProjectDexDebugAndroidTest
+> Task :lab:mergeDebugAndroidTestJavaResource
+> Task :lab:packageDebug
+> Task :lab:packageDebugAndroidTest
+> Task :lab:createDebugApkListingFileRedirect
+> Task :lab:createDebugAndroidTestApkListingFileRedirect
+[EmulatorConsole]: Failed to start Emulator console for 5554
+
+> Task :lab:connectedDebugAndroidTest
+Starting 3 tests on emulator-5554 - 14
+
+emulator-5554 - 14 Tests 0/3 completed. (0 skipped) (0 failed)
+emulator-5554 - 14 Tests 1/3 completed. (0 skipped) (0 failed)
+emulator-5554 - 14 Tests 3/3 completed. (0 skipped) (0 failed)
+Finished 3 tests on emulator-5554 - 14
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__reactivecircus_android-emulator-runner-1794690221252.json
+
+BUILD SUCCESSFUL in 3m 59s
+69 actionable tasks: 69 executed

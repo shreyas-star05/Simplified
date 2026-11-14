@@ -1,0 +1,106 @@
+Installed on 1 device.
+Starting: Intent { cmp=com.dusk.lab/.MainActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: com.dusk.lab/.MainActivity
+TotalTime: 1409
+WaitTime: 1413
+Complete
+before restart:
+{"alarms":[{"id":1,"label":"restart test","api":"idle","scheduledAt":1794690950492,"note":"","reschedules":0},{"id":2,"label":"restart test","api":"clock","scheduledAt":1794691010492,"note":"","reschedules":0}],"events":[]}
+alarms the system holds for the app before restart:
+    RTC_WAKEUP #10: Alarm{3926c9f type 0 origWhen 1794690950492 whenElapsed 768500 com.dusk.lab}
+      tag=*walarm*:com.dusk.lab.FIRE
+      type=RTC_WAKEUP origWhen=2026-11-14 21:15:50.492 window=0 exactAllowReason=policy_permission repeatInterval=0 count=0 flags=0x5
+      policyWhenElapsed: requester=+7m54s196ms app_standby=-5s798ms device_idle=-- battery_saver=-5s798ms tare=-5s798ms
+      whenElapsed=+7m54s196ms maxWhenElapsed=+7m54s196ms
+      operation=PendingIntent{46ae1ec: PendingIntentRecord{ae049b5 com.dusk.lab broadcastIntent}}
+      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=false, android:broadcast.temporaryAppAllowlistReasonCode=302, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+    RTC_WAKEUP #11: Alarm{ef2b84a type 0 origWhen 1794691010492 whenElapsed 828500 com.dusk.lab}
+      tag=*walarm*:com.dusk.lab.FIRE
+      type=RTC_WAKEUP origWhen=2026-11-14 21:16:50.492 window=0 exactAllowReason=policy_permission repeatInterval=0 count=0 flags=0x3
+      policyWhenElapsed: requester=+8m54s196ms app_standby=-5s796ms device_idle=-- battery_saver=-- tare=-5s796ms
+      whenElapsed=+8m54s196ms maxWhenElapsed=+8m54s196ms
+--
+        showIntent=PendingIntent{4bb33bb: PendingIntentRecord{b1a30d8 com.dusk.lab startActivity}}
+      operation=PendingIntent{418cc31: PendingIntentRecord{bac0f16 com.dusk.lab broadcastIntent}}
+      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=false, android:broadcast.temporaryAppAllowlistReasonCode=301, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+    ELAPSED #12: Alarm{5df5097 type 3 origWhen 957572 whenElapsed 957572 com.google.android.configupdater}
+      tag=*alarm*:com.google.android.configupdater.DELAYED_FLAG_COMMIT
+--
+  Next wake from idle: Alarm{ef2b84a type 0 origWhen 1794691010492 whenElapsed 828500 com.dusk.lab}
+app state before restart:
+stopped=false notLaunched=false
+restarting the emulator at 21:08:11
+booted 45s after scheduling
+start-up handler ran: 1, 55s after scheduling
+alarms the system holds for the app after restart:
+    RTC_WAKEUP #9: Alarm{7a51e83 type 0 origWhen 1794690950492 whenElapsed 455304 com.dusk.lab}
+      tag=*walarm*:com.dusk.lab.FIRE
+      type=RTC_WAKEUP origWhen=2026-11-14 21:15:50.492 window=0 exactAllowReason=policy_permission repeatInterval=0 count=0 flags=0x5
+      policyWhenElapsed: requester=+7m3s825ms app_standby=-8s310ms device_idle=-- battery_saver=-8s310ms tare=-8s310ms
+      whenElapsed=+7m3s825ms maxWhenElapsed=+7m3s825ms
+      operation=PendingIntent{cbfe571: PendingIntentRecord{c034f56 com.dusk.lab broadcastIntent}}
+      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=false, android:broadcast.temporaryAppAllowlistReasonCode=302, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+    RTC_WAKEUP #10: Alarm{2192bd7 type 0 origWhen 1794691010492 whenElapsed 515304 com.dusk.lab}
+      tag=*walarm*:com.dusk.lab.FIRE
+      type=RTC_WAKEUP origWhen=2026-11-14 21:16:50.492 window=0 exactAllowReason=policy_permission repeatInterval=0 count=0 flags=0x3
+      policyWhenElapsed: requester=+8m3s825ms app_standby=-8s216ms device_idle=-- battery_saver=-- tare=-8s216ms
+      whenElapsed=+8m3s825ms maxWhenElapsed=+8m3s825ms
+--
+        showIntent=PendingIntent{f5d5cc4: PendingIntentRecord{9c67ad com.dusk.lab startActivity}}
+      operation=PendingIntent{6fd0ae2: PendingIntentRecord{fdaae73 com.dusk.lab broadcastIntent}}
+      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=false, android:broadcast.temporaryAppAllowlistReasonCode=301, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+    ELAPSED_WAKEUP #11: Alarm{1358130 type 2 origWhen 613830 whenElapsed 613830 android}
+      tag=*walarm*:DeviceIdleController.motion
+--
+  Next wake from idle: Alarm{2192bd7 type 0 origWhen 1794691010492 whenElapsed 515304 com.dusk.lab}
+app state:
+stopped=false notLaunched=false
+after restart:
+{"alarms":[{"id":1,"label":"restart test","api":"idle","scheduledAt":1794690950492,"note":"","reschedules":2,"firedAt":1794690950499},{"id":2,"label":"restart test","api":"clock","scheduledAt":1794691010492,"note":"","reschedules":2,"firedAt":1794691010503}],"events":["Sat 14 Nov 21:08:38  restart, before unlock","Sat 14 Nov 21:08:49  restart, after unlock"]}
+log lines from the app and boot broadcasts:
+11-14 21:08:37.797   518   546 I ActivityManager: Start proc 1885:com.dusk.lab/u0a194 for broadcast {com.dusk.lab/com.dusk.lab.reminders.BootReceiver}
+11-14 21:08:38.262  1885  1885 I DuskLab : BootReceiver: restart, before unlock
+11-14 21:08:38.886   518   518 D FastPairService: onReceive: ACTION_BOOT_COMPLETED.
+11-14 21:08:39.493   719   719 D DLObserver: onReceive(); android.intent.action.BOOT_COMPLETED
+11-14 21:08:42.962   518  2338 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.LOCKED_BOOT_COMPLETED dispatchLatency:19 completeLatency:7905 dispatchRealLatency:19 completeRealLatency:7905 receiversSize:7 userId:0 userType:android.os.usertype.full.SYSTEM
+11-14 21:08:43.357  2416  2416 I DialerDialerBootReceiver: com.android.dialer.bootreceiver.DialerBootReceiver.onReceive:29 received ACTION_BOOT_COMPLETED
+11-14 21:08:43.697   897   897 I ImsResolver: Received BOOT_COMPLETED
+11-14 21:08:43.859   897   897 I VvmSimStateTracker: android.intent.action.BOOT_COMPLETED
+11-14 21:08:44.016  2416  2416 I DialerVoicemailPowerCycleReceiver: com.android.voicemail.VoicemailPowerCycleReceiver.onReceive:42 onReceive with intent action: android.intent.action.BOOT_COMPLETED
+11-14 21:08:44.526   719   719 D PowerNotificationWarningsGoogleImpl: onReceive: android.intent.action.BOOT_COMPLETED
+11-14 21:08:44.535   719   719 D IncompatibleChargerNotification: dispatchIntent: android.intent.action.BOOT_COMPLETED
+11-14 21:08:45.690  1022  1022 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+11-14 21:08:46.818   898   898 D BootBroadcastReceiver: refresh periodic job from action=android.intent.action.BOOT_COMPLETED
+11-14 21:08:47.437  1554  1554 D WM-RescheduleReceiver: Received intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.devicelockcontroller/androidx.work.impl.background.systemalarm.RescheduleReceiver (has extras) }
+11-14 21:08:47.731  3029  3029 D HeapDumpReceiver: onReceive(): Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.android.shell/.HeapDumpReceiver (has extras) }
+11-14 21:08:48.580  1137  1137 D SafetyLabelChangesJobService: Received broadcast with intent action 'android.intent.action.BOOT_COMPLETED'
+11-14 21:08:49.571  3366  3366 I GH.FzeroReceiver: Handling intent android.intent.action.BOOT_COMPLETED
+11-14 21:08:49.654  3143  3143 W kch     : [Gmail] ExchangeUpgradeReceiver: ExchangeUpgradeReceiver: action=android.intent.action.BOOT_COMPLETED data=null [CONTEXT android_log_tag="EasBundling" ]
+11-14 21:08:49.748  1885  1885 I DuskLab : BootReceiver: restart, after unlock
+11-14 21:08:50.024   518  2409 I ActivityManager: Background started FGS: Allowed [callingPackage: com.google.android.apps.messaging; callingUid: 10130; uidState: BFGS; uidBFSL: [BFSL]; intent: Intent { cmp=com.google.android.apps.messaging/com.google.apps.tiktok.concurrent.InternalForegroundService (has extras) }; code:PROC_STATE_BFGS; tempAllowListReason:<f8bbd49 android.intent.action.BOOT_COMPLETED/u0,reasonCode:BOOT_COMPLETED,duration:20000,callingUid:1000>; targetSdkVersion:34; callerTargetSdkVersion:34; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+11-14 21:08:50.490  3433  3433 W BatteryWidgetBootBroadcastReceiver: onReceive: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.settings.intelligence/.modules.batterywidget.impl.BatteryWidgetBootBroadcastReceiver (has extras) }
+11-14 21:08:51.364  1569  1569 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [android.intent.action.BOOT_COMPLETED] package [com.google.android.googlequicksearchbox].
+11-14 21:08:51.365  1569  1569 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [android.intent.action.BOOT_COMPLETED].
+11-14 21:08:51.366  1569  2576 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [android.intent.action.BOOT_COMPLETED].
+11-14 21:08:51.381  1569  1569 I A       : Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.platform.contexttrigger.impl.ContextTriggerBroadcastReceiver_Receiver (has extras) }
+11-14 21:08:51.446   518   576 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:-20817 completeLatency:15441 dispatchRealLatency:-20817 completeRealLatency:15441 receiversSize:112 userId:0 userType:android.os.usertype.full.SYSTEM
+11-14 21:08:51.447   518   535 I ActivityManager: Finished processing BOOT_COMPLETED for u0
+11-14 21:08:58.303  1599  3970 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+11-14 21:08:58.396  1599  3970 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+11-14 21:08:58.451  1599  3989 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+11-14 21:08:58.984  1599  3973 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+11-14 21:08:59.120  1599  3975 I SyncIntentOperation: Handling the intent: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+11-14 21:08:59.479  1599  3963 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+11-14 21:08:59.492  1599  3969 I EsimModuleInit: onHandleIntent action: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=333 ]
+11-14 21:08:59.680  1599  3964 I MlBenchmarkInstaller: Intent: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+11-14 21:08:59.680  1599  3964 I MlBenchmarkInstaller: onInitRuntimeState(), intent action=android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+11-14 21:09:00.249  1599  3976 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+11-14 21:09:00.356  1599  3975 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+11-14 21:15:50.499  1885  1885 I DuskLab : AlarmReceiver: reminder 1
+11-14 21:16:50.503  1885  1885 I DuskLab : AlarmReceiver: reminder 2
+#1 idle: fired 0.0s from its time, re-set after restart x2, note: ''
+#2 clock: fired 0.0s from its time, re-set after restart x2, note: ''
+events: ['Sat 14 Nov 21:08:38  restart, before unlock', 'Sat 14 Nov 21:08:49  restart, after unlock']
+PASSED: both reminders survived the restart and fired on time

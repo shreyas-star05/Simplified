@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.dusk.lab.LabTapThroughTest" tests="3" failures="0" errors="0" skipped="0" time="150.999" timestamp="2026-11-14T21:07:30" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 14" />
+    <property name="flavor" value="" />
+    <property name="project" value=":lab" />
+  </properties>
+  <testcase name="a_everyScreenOpensAndAPlanBecomesACard" classname="com.dusk.lab.LabTapThroughTest" time="16.29" />
+  <testcase name="b_aReminderFiresWithinAMinuteOfItsTime" classname="com.dusk.lab.LabTapThroughTest" time="124.171" />
+  <testcase name="c_darkTheme" classname="com.dusk.lab.LabTapThroughTest" time="7.715" />
+</testsuite>
