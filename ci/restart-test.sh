@@ -15,6 +15,17 @@ echo "before restart:"; store; echo
 echo "alarms the system holds for the app before restart:"
 adb shell dumpsys alarm | grep -A3 "$PKG" | head -20
 
+# Android records "this app has been opened" a few seconds after launch. If the phone restarts
+# before that is saved, the app counts as never opened and gets no start-up signal.
+for i in $(seq 1 30); do
+  adb shell dumpsys package $PKG | grep -q "stopped=false" && break
+  sleep 2
+done
+sleep 15
+echo "app state before restart:"
+adb shell dumpsys package $PKG | grep -oE "stopped=[a-z]+ notLaunched=[a-z]+" | head -1
+adb shell sync
+
 echo "restarting the emulator at $(date -u +%T)"
 adb reboot
 sleep 20
@@ -32,7 +43,7 @@ echo "start-up handler ran: $SEEN, $(( $(date +%s) - START ))s after scheduling"
 echo "alarms the system holds for the app after restart:"
 adb shell dumpsys alarm | grep -A3 "$PKG" | head -20
 echo "app state:"
-adb shell dumpsys package $PKG | grep -iE "stopped|enabled=|installed=" | head -5
+adb shell dumpsys package $PKG | grep -oE "stopped=[a-z]+ notLaunched=[a-z]+" | head -1
 
 # The second reminder is due 9 minutes after scheduling. Wait until 45 seconds past that.
 REMAINING=$(( START + 585 - $(date +%s) ))
