@@ -27,8 +27,8 @@ class Prefs(context: Context) {
     var lastBackupAt by mutableStateOf(sp.getLong("lastBackup", 0L).takeIf { it > 0 })
         private set
 
-    fun setTheme(t: ThemeMode) { theme = t; sp.edit().putString("theme", t.name).apply() }
-    fun setSpeech(s: SpeechChoice) { speech = s; sp.edit().putString("speech", s.name).apply() }
+    fun chooseTheme(t: ThemeMode) { theme = t; sp.edit().putString("theme", t.name).apply() }
+    fun chooseSpeech(s: SpeechChoice) { speech = s; sp.edit().putString("speech", s.name).apply() }
     fun setLock(on: Boolean) { lockEnabled = on; sp.edit().putBoolean("lock", on).apply() }
     fun markBackedUp(at: Long) { lastBackupAt = at; sp.edit().putLong("lastBackup", at).apply() }
 }

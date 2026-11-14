@@ -146,7 +146,7 @@ fun SettingsScreen(app: DuskApp, onClose: () -> Unit) {
                     ThemeMode.entries.forEach { t ->
                         FilterChip(
                             selected = prefs.theme == t,
-                            onClick = { prefs.setTheme(t) },
+                            onClick = { prefs.chooseTheme(t) },
                             label = { Text(t.label) },
                             modifier = Modifier.testTag("theme-${t.name}"),
                         )
@@ -178,7 +178,7 @@ fun SettingsScreen(app: DuskApp, onClose: () -> Unit) {
                 Gap(8)
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     SpeechChoice.entries.forEach { s ->
-                        FilterChip(selected = prefs.speech == s, onClick = { prefs.setSpeech(s) }, label = { Text(s.label) }, modifier = Modifier.testTag("speech-${s.name}"))
+                        FilterChip(selected = prefs.speech == s, onClick = { prefs.chooseSpeech(s) }, label = { Text(s.label) }, modifier = Modifier.testTag("speech-${s.name}"))
                     }
                 }
                 Gap(4)

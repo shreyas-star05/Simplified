@@ -62,7 +62,7 @@ class DuskTest {
             withTimeout(10_000) { app.journal.loaded.first { it } }
             app.journal.deleteEverything()
         }
-        rule.runOnUiThread { app.prefs.setTheme(ThemeMode.LIGHT); app.prefs.setLock(true) }
+        rule.runOnUiThread { app.prefs.chooseTheme(ThemeMode.LIGHT); app.prefs.setLock(true) }
         rule.waitForIdle()
         // The emulator has no screen lock, so the app opens straight away. Wait for the home screen.
         rule.waitUntil(5_000) {
