@@ -2,12 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- In-app microphone for speech engines B and C -->
+    <!-- Only for the in-app mic, and only if you switch it on in Settings -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <!-- Reminders -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- Offline guarantee: strip network access even if a library asks for it -->
     <uses-permission
@@ -17,19 +13,23 @@
         android:name="android.permission.ACCESS_NETWORK_STATE"
         tools:node="remove" />
 
-    <!-- Lets the app see which speech services are installed on the phone -->
     <queries>
         <intent>
             <action android:name="android.speech.RecognitionService" />
         </intent>
     </queries>
 
+    <!-- No cloud backup and no phone-to-phone copy: the encrypted files would be unreadable on
+         another phone anyway, because their key never leaves this one. Use a backup file instead. -->
     <application
+        android:name=".DuskApp"
         android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.DuskLab">
+        android:theme="@style/Theme.Dusk">
 
         <activity
             android:name=".MainActivity"
@@ -40,25 +40,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- directBootAware: these run after a restart even before the phone is unlocked -->
-        <receiver
-            android:name=".reminders.AlarmReceiver"
-            android:directBootAware="true"
-            android:exported="false" />
-        <receiver
-            android:name=".reminders.ActionReceiver"
-            android:directBootAware="true"
-            android:exported="false" />
-        <receiver
-            android:name=".reminders.BootReceiver"
-            android:directBootAware="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-            </intent-filter>
-        </receiver>
     </application>
 </manifest>

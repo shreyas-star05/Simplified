@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Dusk"
 include(":core")
+include(":lab")
 include(":app")

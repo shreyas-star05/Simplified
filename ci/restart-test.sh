@@ -6,7 +6,7 @@ PKG=com.dusk.lab
 STORE=/data/user_de/0/$PKG/files/alarms.json
 store() { adb shell run-as $PKG cat $STORE 2>/dev/null; }
 
-./gradlew :app:installDebug --no-daemon -q
+./gradlew :lab:installDebug --no-daemon -q
 adb shell pm grant $PKG android.permission.POST_NOTIFICATIONS
 adb shell am start -W -n $PKG/.MainActivity --ei schedule_minutes 8
 START=$(date +%s)

@@ -1,1 +1,1 @@
-# Default Android + library consumer rules are enough for this app.
+# Default Android and library consumer rules are enough for this app.

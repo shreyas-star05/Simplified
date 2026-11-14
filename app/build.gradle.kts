@@ -4,27 +4,38 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
+// The real signing key lives only in GitHub secrets (and with Shreyas). Without it the build is a
+// "preview": a separate app id, so it can never be confused with or overwrite the real app.
+val releaseKeyFile: File? = System.getenv("DUSK_KEYSTORE_FILE")?.let { file(it) }?.takeIf { it.exists() }
+val hasRealKey = releaseKeyFile != null && !System.getenv("DUSK_KEYSTORE_PASSWORD").isNullOrEmpty()
+
 android {
-    namespace = "com.dusk.lab"
+    namespace = "com.dusk.app"
     compileSdk = 36
 
     defaultConfig {
-        // Release 0 is a throwaway test build. It has its own id so the real app never collides with it.
-        applicationId = "com.dusk.lab"
-        minSdk = 33          // Android 13+: on-device speech checks, USE_EXACT_ALARM, notification permission
+        applicationId = "com.dusk.app"
+        minSdk = 33
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1-lab"
+        versionCode = 10
+        versionName = "1.0-r1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // Test-build key only. The real app will not ship with a key stored in the repo.
     signingConfigs {
-        create("lab") {
-            storeFile = file("dusk-lab.jks")
+        create("preview") {
+            storeFile = file("../lab/dusk-lab.jks")
             storePassword = "dusklab"
             keyAlias = "dusklab"
             keyPassword = "dusklab"
+        }
+        if (hasRealKey) {
+            create("real") {
+                storeFile = releaseKeyFile
+                storePassword = System.getenv("DUSK_KEYSTORE_PASSWORD")
+                keyAlias = "dusk"
+                keyPassword = System.getenv("DUSK_KEYSTORE_PASSWORD")
+            }
         }
     }
 
@@ -33,10 +44,21 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("lab")
+            if (hasRealKey) {
+                signingConfig = signingConfigs.getByName("real")
+                resValue("string", "app_name", "Dusk")
+                buildConfigField("boolean", "PREVIEW", "false")
+            } else {
+                applicationIdSuffix = ".preview"
+                signingConfig = signingConfigs.getByName("preview")
+                resValue("string", "app_name", "Dusk preview")
+                buildConfigField("boolean", "PREVIEW", "true")
+            }
         }
         debug {
-            signingConfig = signingConfigs.getByName("lab")
+            applicationIdSuffix = ".debug"
+            resValue("string", "app_name", "Dusk debug")
+            buildConfigField("boolean", "PREVIEW", "false")
         }
     }
 
@@ -47,6 +69,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     lint {
@@ -72,6 +95,8 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.16.0")
     implementation("androidx.activity:activity-compose:1.10.1")
+    implementation("androidx.fragment:fragment-ktx:1.8.8")
+    implementation("androidx.biometric:biometric:1.1.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 
