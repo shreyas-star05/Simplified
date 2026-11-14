@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dusk.core.CoreTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-11-14T21:02:36.762Z" hostname="ip-10-0-129-80" time="0.441">
+  <properties/>
+  <testcase name="release1CoreChecksPass" classname="com.dusk.core.CoreTest" time="0.441"/>
+  <system-out><![CDATA[backup with 310000 PBKDF2 rounds took 122 ms on this machine
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

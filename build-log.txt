@@ -1,0 +1,147 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:processResources NO-SOURCE
+> Task :core:processTestResources
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateReleaseBuildConfig
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:checkReleaseAarMetadata
+> Task :app:processReleaseNavigationResources
+> Task :app:compileReleaseNavigationResources
+> Task :app:generateReleaseResValues
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:mergeReleaseResources
+> Task :app:parseReleaseLocalResources
+
+> Task :app:processReleaseMainManifest
+/home/runner/work/Simplified/Simplified/app/src/main/AndroidManifest.xml:9:5-11:31 Warning:
+	uses-permission#android.permission.INTERNET was tagged at AndroidManifest.xml:9 to remove other declarations but no other declaration present
+/home/runner/work/Simplified/Simplified/app/src/main/AndroidManifest.xml:12:5-14:31 Warning:
+	uses-permission#android.permission.ACCESS_NETWORK_STATE was tagged at AndroidManifest.xml:12 to remove other declarations but no other declaration present
+
+> Task :app:processReleaseManifest
+> Task :app:processReleaseManifestForPackage
+> Task :app:javaPreCompileRelease
+> Task :app:mergeReleaseArtProfile
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseStartupProfile
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:collectReleaseDependencies
+> Task :app:processReleaseResources
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :lab:preBuild UP-TO-DATE
+> Task :lab:preReleaseBuild UP-TO-DATE
+> Task :lab:mergeReleaseJniLibFolders
+> Task :lab:buildKotlinToolingMetadata
+> Task :lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :lab:checkReleaseAarMetadata
+> Task :lab:checkReleaseDuplicateClasses
+> Task :lab:processReleaseNavigationResources
+> Task :lab:compileReleaseNavigationResources
+> Task :lab:generateReleaseResValues
+> Task :lab:mapReleaseSourceSetPaths
+> Task :lab:generateReleaseResources
+> Task :lab:packageReleaseResources
+> Task :lab:createReleaseCompatibleScreenManifests
+> Task :lab:extractDeepLinksRelease
+> Task :lab:parseReleaseLocalResources
+
+> Task :lab:processReleaseMainManifest
+/home/runner/work/Simplified/Simplified/lab/src/main/AndroidManifest.xml:13:5-15:31 Warning:
+	uses-permission#android.permission.INTERNET was tagged at AndroidManifest.xml:13 to remove other declarations but no other declaration present
+/home/runner/work/Simplified/Simplified/lab/src/main/AndroidManifest.xml:16:5-18:31 Warning:
+	uses-permission#android.permission.ACCESS_NETWORK_STATE was tagged at AndroidManifest.xml:16 to remove other declarations but no other declaration present
+
+> Task :lab:processReleaseManifest
+> Task :lab:javaPreCompileRelease
+> Task :lab:processReleaseManifestForPackage
+> Task :lab:mergeReleaseArtProfile
+> Task :lab:extractProguardFiles
+> Task :lab:mergeReleaseStartupProfile
+> Task :lab:mergeReleaseShaders
+> Task :lab:compileReleaseShaders NO-SOURCE
+> Task :lab:generateReleaseAssets UP-TO-DATE
+> Task :lab:mergeReleaseAssets
+> Task :lab:compressReleaseAssets
+> Task :lab:extractReleaseVersionControlInfo
+> Task :lab:mergeReleaseResources
+> Task :lab:collectReleaseDependencies
+> Task :lab:sdkReleaseDependencyData
+> Task :lab:validateSigningRelease
+> Task :lab:writeReleaseAppMetadata
+> Task :lab:writeReleaseSigningConfigVersions
+> Task :lab:processReleaseResources
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar
+> Task :app:mergeReleaseNativeLibs
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :lab:mergeReleaseNativeLibs
+> Task :app:extractReleaseNativeSymbolTables
+
+> Task :lab:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :lab:extractReleaseNativeSymbolTables
+> Task :lab:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :core:compileTestKotlin
+> Task :core:compileTestJava NO-SOURCE
+> Task :core:testClasses
+
+> Task :core:test
+
+CoreTest > release1CoreChecksPass STANDARD_OUT
+    backup with 310000 PBKDF2 rounds took 122 ms on this machine
+
+> Task :lab:compileReleaseKotlin
+> Task :lab:compileReleaseJavaWithJavac NO-SOURCE
+> Task :lab:mergeReleaseGeneratedProguardFiles
+> Task :lab:processReleaseJavaRes
+> Task :lab:expandReleaseArtProfileWildcards
+> Task :lab:mergeReleaseJavaResource
+> Task :app:compileReleaseKotlin
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:mergeReleaseGeneratedProguardFiles
+> Task :app:processReleaseJavaRes
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:mergeReleaseJavaResource
+> Task :lab:minifyReleaseWithR8
+> Task :lab:convertShrunkResourcesToBinaryRelease
+> Task :lab:optimizeReleaseResources
+> Task :lab:compileReleaseArtProfile
+> Task :lab:packageRelease
+> Task :lab:createReleaseApkListingFileRedirect
+> Task :lab:assembleRelease
+> Task :app:minifyReleaseWithR8
+> Task :app:convertShrunkResourcesToBinaryRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:optimizeReleaseResources
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/__run_2-1794690126544.json
+
+BUILD SUCCESSFUL in 2m 7s
+97 actionable tasks: 97 executed
